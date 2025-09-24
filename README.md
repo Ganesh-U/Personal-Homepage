@@ -3,11 +3,7 @@
 A modern, interactive personal homepage showcasing technical skills, professional journey, and academic projects through creative visualizations and engaging user experiences.
 
 ## Objective
-- Present technical expertise through interactive visualizations
-- Showcase academic and professional projects with detailed descriptions
-- Provide an engaging timeline of educational and career milestones
-- Demonstrate web development skills through creative UI components
-- Serve as a professional resource for recruiters and employers
+This project is designed to present my technical expertise through interactive visualizations while showcasing academic and professional projects with detailed descriptions. It features an engaging timeline of educational and career milestones, highlights web development skills through creative UI components, and serves as a professional resource for recruiters and employers.
 
 ## Screenshots
 
