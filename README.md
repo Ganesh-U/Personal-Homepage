@@ -29,19 +29,6 @@ A modern, interactive personal homepage showcasing technical skills, professiona
 *Rotating circular project menu with detailed popup modals*
 
 
-
-## Creative Addition
-
-### Interactive Skills Constellation
-The homepage features a unique **space-themed skills visualization** where technical competencies are represented as celestial bodies in an interactive constellation:
-
-- **Visual Design:** Skills appear as glowing nodes with pulsing animations and particle effects
-- **Interactivity:** Click on main skill categories (Programming, Web Development, etc.) to expand and reveal specific technologies
-- **Technical Implementation:** Uses mathematical positioning with trigonometry for precise circular layouts
-- **User Experience:** Smooth CSS animations with hover effects and expandable sub-skill nodes
-
-This creative addition goes beyond traditional skill lists to provide an engaging, memorable way for visitors to explore technical expertise.
-
 ## Technology Requirements
 
 ### Core Technologies
@@ -147,7 +134,7 @@ portfolio/
 - **Consistent Styling:** Unified design system across all pages
 
 ### **Creative Features Highlighted**
-- **Interactive Skills Constellation:** Space-themed visualization with mathematical positioning
+- **Interactive Skills Constellation:** Visualization of Skills icons with circular positioning
 - **Rotating Project Menu:** Circular navigation of projects
 - **Horizontal Timeline:** Unique career journey presentation with smooth scrolling
 
