@@ -11,25 +11,28 @@ A modern, interactive personal homepage showcasing technical skills, professiona
 
 ## Screenshots
 
-### Homepage - Interactive Skills Constellation
-![Homepage Skills Visualization](screenshots/homepage-skills.png)
+### Homepage
+![Homepage](images/Screenshot_Homepage.png)
 *Interactive skills constellation with expandable categories and smooth animations*
 
+### About-Me Section
+![About-Me Section](images/Screenshot_AboutMe.png)
+*Interactive skills constellation with expandable categories and smooth animations*
+
+
 ### Journey Page - Horizontal Timeline
-![Journey Timeline](screenshots/journey-timeline.png) 
+![Journey Timeline](images/Screenshot_Journey.png) 
 *Scrollable career timeline with expandable milestone cards*
 
 ### Projects Page - Circular Menu System
-![Projects Circular Menu](screenshots/projects-menu.png)
+![Projects Circular Menu](images/Screenshot_Projects.png)
 *Rotating circular project menu with detailed popup modals*
 
-### Mobile Responsive Design
-![Mobile View](screenshots/mobile-responsive.png)
-*Fully responsive design optimized for mobile devices*
 
-## 🌟 Creative Addition
 
-### Interactive Skills Constellation (Primary Creative Feature)
+## Creative Addition
+
+### Interactive Skills Constellation
 The homepage features a unique **space-themed skills visualization** where technical competencies are represented as celestial bodies in an interactive constellation:
 
 - **Visual Design:** Skills appear as glowing nodes with pulsing animations and particle effects
@@ -39,7 +42,7 @@ The homepage features a unique **space-themed skills visualization** where techn
 
 This creative addition goes beyond traditional skill lists to provide an engaging, memorable way for visitors to explore technical expertise.
 
-## 🛠️ Technology Requirements
+## Technology Requirements
 
 ### Core Technologies
 - **HTML5:** Semantic markup with modern standards
@@ -58,7 +61,7 @@ This creative addition goes beyond traditional skill lists to provide an engagin
 - Chrome 60+, Firefox 55+, Safari 11+, Edge 16+
 - Mobile browsers with touch interaction support
 
-## 📋 Installation & Usage
+## Installation & Usage
 
 ### Prerequisites
 - Node.js and npm (for development tools)
@@ -121,10 +124,10 @@ portfolio/
 └── README.md              # This file
 ```
 
-## 🌟 Key Features
+## Key Features
 
 ### Homepage
-- **Hero Section:** Professional introduction with large profile image
+- **Hero Section:** Professional introduction along with image
 - **Interactive Skills Constellation:** Space-themed skill visualization with expandable categories
 - **Responsive Design:** Optimized for desktop, tablet, and mobile devices
 - **Smooth Animations:** CSS transitions and hover effects throughout
@@ -147,31 +150,38 @@ portfolio/
 - **Consistent Styling:** Unified design system across all pages
 - **Accessibility:** Semantic HTML, alt tags, and keyboard navigation
 
-## 👨‍💻 Author
+
+### **Creative Features Highlighted**
+- **Interactive Skills Constellation:** Space-themed visualization with mathematical positioning
+- **Rotating Project Menu:** Circular navigation with trigonometric calculations  
+- **Horizontal Timeline:** Unique career journey presentation with smooth scrolling
+
+## Author
 
 **Ganesh Umasankar**  
 MS Computer Science Student  
 Northeastern University, Boston, MA  
 
-- **Portfolio Website:** [https://ganeshumasankar.github.io/portfolio](https://ganeshumasankar.github.io/portfolio)
+- **Portfolio Website:** [https://ganeshumasankar.github.io/portfolio](https://ganesh-u.github.io/Personal-Homepage/)
 - **Email:** umasankar.g@northeastern.edu
 - **LinkedIn:** [ganesh-umasankar-87a3371b4](https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/)
-- **GitHub:** [ganeshumasankar](https://github.com/ganeshumasankar)
+- **GitHub:** [ganeshumasankar](https://github.com/Ganesh-U)
 
-## 🎓 Academic Reference
+## Academic Reference
 
 **Course:** CS5610 - Web Development  
 **Institution:** Northeastern University  
 **Semester:** Spring 2025  
 **Course Website:** [https://johnguerra.co/classes/webDevelopment_spring_2025/](https://johnguerra.co/classes/webDevelopment_spring_2025/)
 
-## 📚 Documentation & Resources
+## Documentation & Resources
 
 ### Project Documentation
 - **Design Document:** [Design Documentation](docs/design-document.pdf)
-- **Video Demo:** [Portfolio Walkthrough](https://youtube.com/watch/demo-video)
-- **Live Website:** [Portfolio URL](https://ganeshumasankar.github.io/portfolio)
-- **Source Code:** [GitHub Repository](https://github.com/ganeshumasankar/portfolio)
+- **Presentation:** [Slides](https://docs.google.com/presentation/d/1yIyCJ-IcHAYClWeDO4o5jYCC0doyQlSiq8o7bzsD2QM/edit?usp=sharing)
+- **Video Demo:** [Homepage Walkthrough](https://youtube.com/watch/demo-video)
+- **Live Website:** [Portfolio URL](https://ganesh-u.github.io/Personal-Homepage/)
+- **Source Code:** [GitHub Repository](https://github.com/Ganesh-U/Personal-Homepage)
 
 ### Technical Resources
 - **W3C Validation:** All HTML pages pass W3C validation
@@ -179,11 +189,10 @@ Northeastern University, Boston, MA
 - **Prettier Config:** Consistent code formatting across project
 - **Accessibility:** WCAG compliant with semantic markup
 
-## 🧠 Use of Generative AI
+## Use of Generative AI
 
 ### AI Tools Used
 - **Claude (Anthropic):** Version 4 Sonnet
-- **Usage Period:** February-March 2025
 - **Assistance Scope:** Code optimization, design documentation, and debugging support
 
 ### Specific AI Assistance
@@ -194,50 +203,16 @@ Northeastern University, Boston, MA
 
 ### Prompts Used
 - "Help me optimize circular positioning math for the rotating project menu to work consistently across different screen sizes"
-- "Review this CSS animation code for better performance on mobile devices and suggest GPU-accelerated alternatives"
+- "Review this CSS animation code for better performance on mobile devices and suggest alternatives"
 - "Create comprehensive documentation structure for an academic portfolio project including all required sections for CS5610"
 - "Debug responsive design issues with circular layouts and suggest solutions for maintaining proportions across devices"
 
-### AI Contribution Clarification
-All core functionality, creative concepts, and design decisions were developed independently. AI assistance was primarily used for:
-- **Debugging and optimization** of existing code implementations
-- **Documentation formatting** and structure organization
-- **Best practices guidance** for modern web development standards
-- **Performance optimization** suggestions for animations and responsive design
 
-The creative interactive elements (skills constellation, circular menu, horizontal timeline) are original implementations developed through personal problem-solving and mathematical reasoning.
-
-## 🎬 Demo Video
-
-**Video Demonstration:** [YouTube Portfolio Walkthrough](https://youtube.com/watch/demo-video)
-
-The video includes:
-- Complete website walkthrough and navigation
-- Interactive features demonstration (skills expansion, timeline scrolling, project rotation)
-- Mobile responsiveness showcase across different devices
-- Technical implementation highlights and code organization
-- Creative elements in action with performance demonstration
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-While this is a personal portfolio project, feedback and suggestions are welcome! Please feel free to:
-- Open issues for bugs or suggestions
-- Submit pull requests for improvements
-- Share feedback on design and user experience
-- Connect for collaboration opportunities
-
-## 📞 Contact
-
-For questions about this project or collaboration opportunities:
-
-- **Email:** umasankar.g@northeastern.edu
-- **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/)
-- **Portfolio:** [Visit Website](https://ganeshumasankar.github.io/portfolio)
 
 ---
 
 **Built with ❤️ by Ganesh Umasankar for CS5610 Web Development**
+
