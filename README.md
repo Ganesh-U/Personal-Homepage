@@ -179,7 +179,7 @@ Northeastern University, Boston, MA
 ### Project Documentation
 - **Design Document:** [Design Documentation](docs/design-document.pdf)
 - **Presentation:** [Slides](https://docs.google.com/presentation/d/1yIyCJ-IcHAYClWeDO4o5jYCC0doyQlSiq8o7bzsD2QM/edit?usp=sharing)
-- **Video Demo:** [Homepage Walkthrough](https://youtube.com/watch/demo-video)
+- **Video Demo:** [Homepage Walkthrough](https://drive.google.com/file/d/15YcNMW-W8f7LugiJCLtD-vPwWwQoJEZY/view?usp=sharing)
 - **Live Website:** [Portfolio URL](https://ganesh-u.github.io/Personal-Homepage/)
 - **Source Code:** [GitHub Repository](https://github.com/Ganesh-U/Personal-Homepage)
 
@@ -191,21 +191,23 @@ Northeastern University, Boston, MA
 
 ## Use of Generative AI
 
+**This project contains a mix of original work and AI-generated assets.**
+
 ### AI Tools Used
 - **Claude (Anthropic):** Version 4 Sonnet
-- **Assistance Scope:** Code optimization, design documentation, and debugging support
+- **Assistance Scope:** Code optimization, design documentation, debugging support, and projects page development
 
 ### Specific AI Assistance
-1. **CSS Animation Debugging:** Helped resolve complex positioning issues in the circular menu system and optimized performance for mobile devices
-2. **JavaScript Optimization:** Provided suggestions for performance improvements in the skills visualization and responsive design implementation
-3. **Documentation Creation:** Assisted with structuring comprehensive README documentation and design document formatting
-4. **Code Review:** Helped identify potential improvements in ES6 module organization and best practices implementation
+1. **Projects Page Development:** Developed the interactive projects page by providing Claude with my existing homepage and journey page code, along with my resume content, and prompting for an engaging circular menu system to showcase my projects.
+2. **CSS Animation Debugging:** Helped resolve complex positioning issues in the circular menu system.
+3. **JavaScript Optimization:** Provided suggestions for performance improvements in the skills visualization and responsive design implementation.
+4. **Documentation Creation:** Assisted with structuring comprehensive README documentation and design document formatting.
 
 ### Prompts Used
+- "I have my homepage with skillset and journey page with horizontal timeline. Here's my resume with 5 projects. Create an interactive projects page that matches my design aesthetic and showcases these projects engagingly"
 - "Help me optimize circular positioning math for the rotating project menu to work consistently across different screen sizes"
-- "Review this CSS animation code for better performance on mobile devices and suggest alternatives"
+- "Review this CSS animation code for better performance across devices"
 - "Create comprehensive documentation structure for an academic portfolio project including all required sections for CS5610"
-- "Debug responsive design issues with circular layouts and suggest solutions for maintaining proportions across devices"
 
 
 ## License
@@ -215,4 +217,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Built with ❤️ by Ganesh Umasankar for CS5610 Web Development**
-
