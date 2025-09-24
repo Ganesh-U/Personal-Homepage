@@ -128,32 +128,27 @@ portfolio/
 
 ### Homepage
 - **Hero Section:** Professional introduction along with image
-- **Interactive Skills Constellation:** Space-themed skill visualization with expandable categories
-- **Responsive Design:** Optimized for desktop, tablet, and mobile devices
+- **Skills Visualization:** Interactive visualization with expandable categories
 - **Smooth Animations:** CSS transitions and hover effects throughout
 
 ### Journey Page
 - **Horizontal Timeline:** Scrollable career progression with key milestones
 - **Expandable Cards:** Click to reveal detailed information about each experience
 - **Visual Elements:** Gradient timeline with floating background animations
-- **Touch Support:** Mobile-friendly scrolling and interactions
 
 ### Projects Page  
 - **Circular Rotating Menu:** Projects arranged in a continuously rotating circle
 - **Interactive Popups:** Detailed project information in modal overlays
 - **Hover Effects:** Pause rotation and scale effects on interaction
-- **Technology Tags:** Color-coded technology stack indicators
 
 ### Shared Components
 - **Responsive Navigation:** Mobile hamburger menu with smooth animations
 - **Professional Footer:** Contact information and social links
 - **Consistent Styling:** Unified design system across all pages
-- **Accessibility:** Semantic HTML, alt tags, and keyboard navigation
-
 
 ### **Creative Features Highlighted**
 - **Interactive Skills Constellation:** Space-themed visualization with mathematical positioning
-- **Rotating Project Menu:** Circular navigation with trigonometric calculations  
+- **Rotating Project Menu:** Circular navigation of projects
 - **Horizontal Timeline:** Unique career journey presentation with smooth scrolling
 
 ## Author
