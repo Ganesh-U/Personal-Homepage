@@ -1,0 +1,42 @@
+{
+  "name": "ganesh-umasankar-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Ganesh Umasankar - CS5610 Web Development",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "dev": "reload -b -p 8080",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "lint": "eslint js/**/*.js",
+    "lint:fix": "eslint js/**/*.js --fix",
+    "validate": "html-validate index.html journey.html projects.html"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "javascript",
+    "es6",
+    "html5",
+    "css3",
+    "honeycomb",
+    "subway-map",
+    "timeline"
+  ],
+  "author": "Ganesh Umasankar",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "html-validate": "^8.7.4",
+    "http-server": "^14.1.1",
+    "prettier": "^3.1.1",
+    "reload": "^3.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ganeshumasankar/portfolio.git"
+  },
+  "homepage": "https://pages.github.khoury.northeastern.edu/ganeshumasankar/portfolio"
+}
