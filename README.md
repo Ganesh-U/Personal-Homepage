@@ -178,7 +178,8 @@ Northeastern University, Boston, MA
 
 ### Project Documentation
 - **Design Document:** [Design Documentation](docs/design-document.pdf)
-- **Video Demo:** [Portfolio Walkthrough](https://youtube.com/watch/demo-video)
+- **Presentation:** [Slides](https://docs.google.com/presentation/d/1yIyCJ-IcHAYClWeDO4o5jYCC0doyQlSiq8o7bzsD2QM/edit?usp=sharing)
+- **Video Demo:** [Homepage Walkthrough](https://youtube.com/watch/demo-video)
 - **Live Website:** [Portfolio URL](https://ganesh-u.github.io/Personal-Homepage/)
 - **Source Code:** [GitHub Repository](https://github.com/Ganesh-U/Personal-Homepage)
 
