@@ -127,7 +127,7 @@ portfolio/
 ## Key Features
 
 ### Homepage
-- **Hero Section:** Professional introduction with large profile image
+- **Hero Section:** Professional introduction along with image
 - **Interactive Skills Constellation:** Space-themed skill visualization with expandable categories
 - **Responsive Design:** Optimized for desktop, tablet, and mobile devices
 - **Smooth Animations:** CSS transitions and hover effects throughout
@@ -150,6 +150,12 @@ portfolio/
 - **Consistent Styling:** Unified design system across all pages
 - **Accessibility:** Semantic HTML, alt tags, and keyboard navigation
 
+
+### **Creative Features Highlighted**
+- **Interactive Skills Constellation:** Space-themed visualization with mathematical positioning
+- **Rotating Project Menu:** Circular navigation with trigonometric calculations  
+- **Horizontal Timeline:** Unique career journey presentation with smooth scrolling
+
 ## Author
 
 **Ganesh Umasankar**  
@@ -168,7 +174,7 @@ Northeastern University, Boston, MA
 **Semester:** Spring 2025  
 **Course Website:** [https://johnguerra.co/classes/webDevelopment_spring_2025/](https://johnguerra.co/classes/webDevelopment_spring_2025/)
 
-## 📚 Documentation & Resources
+## Documentation & Resources
 
 ### Project Documentation
 - **Design Document:** [Design Documentation](docs/design-document.pdf)
@@ -182,7 +188,7 @@ Northeastern University, Boston, MA
 - **Prettier Config:** Consistent code formatting across project
 - **Accessibility:** WCAG compliant with semantic markup
 
-## 🧠 Use of Generative AI
+## Use of Generative AI
 
 ### AI Tools Used
 - **Claude (Anthropic):** Version 4 Sonnet
@@ -201,63 +207,9 @@ Northeastern University, Boston, MA
 - "Debug responsive design issues with circular layouts and suggest solutions for maintaining proportions across devices"
 
 
-## CS5610 Assignment Rubric Checklist
-
-### **Design Document (80 pts) ✅**
-- ✅ **Project Description:** Complete overview with objectives and target audience
-- ✅ **User Personas:** Technical Recruiter and Hiring Manager personas with goals and needs
-- ✅ **User Stories:** 5 comprehensive user stories covering key functionality
-- ✅ **Design Mockups:** Wireframes and visual design approach with minimalistic diagrams
-
-### **Technical Requirements**
-- ✅ **Good Homepage:** Meaningful information with professional presentation (15 pts)
-- ✅ **ES6 Modules:** All JavaScript uses `type="module"` with proper module structure (5 pts)
-- ✅ **Public Deployment:** Live website deployed on GitHub Pages (5 pts)
-- ✅ **Original Creative Component:** Interactive Skills Constellation differentiates from other portfolios (5 pts)
-- ✅ **Organized File Structure:** CSS, JS, and images in separate folders (5 pts)
-- ✅ **Meta Information:** Author, description, and favicon included (5 pts)
-- ✅ **Original JavaScript:** 200+ lines of custom interactive functionality (5 pts)
-- ✅ **Prettier Formatted:** All code consistently formatted (5 pts)
-- ✅ **W3C Compliant:** HTML passes validation without errors (5 pts)
-- ✅ **ESLint Clean:** Uses class config with zero linting errors (5 pts)
-- ✅ **Alt Text:** All images include descriptive alt attributes (5 pts)
-- ✅ **Multiple Pages:** 3 HTML pages with different URLs (index, journey, projects) (5 pts)
-- ✅ **CSS Classes:** Elements identified with semantic class names (5 pts)
-- ✅ **Standard HTML:** Uses appropriate semantic tags (buttons, nav, sections) (5 pts)
-- ✅ **Clean CSS:** Organized styling without !important declarations (5 pts)
-- ✅ **Responsive Layout:** CSS Grid and Flexbox for mobile-friendly design (5 pts)
-
-### **Project Documentation**
-- ✅ **Clear README:** Comprehensive documentation with all required sections (5 pts)
-- ✅ **Package.json:** Lists all project dependencies and scripts (5 pts)
-- ✅ **MIT License:** Open source license included (5 pts)
-- ✅ **Demo Video:** Portfolio walkthrough with narration (15 pts)
-- ✅ **Google Form Submission:** Thumbnail and links work correctly (5 pts)
-- ✅ **GenAI Documentation:** Detailed AI usage with models, prompts, and contributions (10 pts)
-- ✅ **Code Review:** Peer review completion (20 pts)
-
-### **Creative Features Highlighted**
-- 🎨 **Interactive Skills Constellation:** Space-themed visualization with mathematical positioning
-- 🔄 **Rotating Project Menu:** Circular navigation with trigonometric calculations  
-- ⏱️ **Horizontal Timeline:** Unique career journey presentation with smooth scrolling
-- 📱 **Responsive Animations:** 60fps performance across all devices
-- 🧮 **Mathematical Precision:** Trigonometric positioning algorithms for perfect layouts
-
-**Total Points Achievable:** 235 pts
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-## Contact
-
-For questions about this project or collaboration opportunities:
-
-- **Email:** umasankar.g@northeastern.edu
-- **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/)
-- **Portfolio:** [Visit Website](https://ganeshumasankar.github.io/portfolio)
 
 ---
 
