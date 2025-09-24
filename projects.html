@@ -1,187 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ganesh Umasankar">
-    <meta name="description" content="Academic and professional projects by Ganesh Umasankar">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <title>Projects - Ganesh Umasankar</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script type="module" src="./js/projects.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-brand">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ganesh Umasankar">
+  <meta name="description" content="Academic and professional projects by Ganesh Umasankar - Software development, machine learning, and networking projects">
+  <meta name="keywords" content="Ganesh Umasankar, projects, software development, machine learning, networking">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <title>Projects - Ganesh Umasankar</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/projects.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Home">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+        </svg>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#about" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="journey.html" class="nav-link">Journey</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link active">Projects</a>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="projects-section">
+    <div class="floating-bg">
+      <div class="float-emoji float-1">&#128187;</div>
+      <div class="float-emoji float-2">&#128640;</div>
+      <div class="float-emoji float-3">&#9889;</div>
+      <div class="float-emoji float-4">&#128295;</div>
+      <div class="float-emoji float-5">&#128202;</div>
+      <div class="float-emoji float-6">&#127919;</div>
+      <div class="float-emoji float-7">&#128161;</div>
+      <div class="float-emoji float-8">&#128293;</div>
+      <div class="float-emoji float-9">&#11088;</div>
+      <div class="float-emoji float-10">&#127775;</div>
+      <div class="float-emoji float-11">&#128142;</div>
+      <div class="float-emoji float-12">&#127912;</div>
+    </div>
+
+    <div class="projects-container">
+      <div class="projects-title">
+        <h1>My Projects</h1>
+        <p>Click on a project to explore</p>
+      </div>
+
+      <div class="circular-menu" id="circularMenu">
+        <div class="menu-center">
+          <span class="center-text">PROJECTS</span>
+        </div>
+        
+        <div class="menu-item" data-project="finance">
+          <div class="item-dot"></div>
+          <div class="item-label">Finance Tracker System</div>
+        </div>
+        
+        <div class="menu-item" data-project="mlag">
+          <div class="item-dot"></div>
+          <div class="item-label">MLAG Config-Sanitizer</div>
+        </div>
+        
+        <div class="menu-item" data-project="pollution">
+          <div class="item-dot"></div>
+          <div class="item-label">Air Pollution Trajectory Prediction</div>
+        </div>
+        
+        <div class="menu-item" data-project="faculty">
+          <div class="item-dot"></div>
+          <div class="item-label">Faculty Dashboard</div>
+        </div>
+        
+        <div class="menu-item" data-project="energy">
+          <div class="item-dot"></div>
+          <div class="item-label">Renewable Energy Monitoring System</div>
+        </div>
+      </div>
+
+      <div class="project-popup" id="projectPopup">
+        <button class="popup-close" id="popupClose">&times;</button>
+        
+        <div class="popup-content" data-popup="finance">
+          <h3>Finance Tracker System</h3>
+          <p class="popup-period">Feb - Apr 2025</p>
+          <p class="popup-description">
+            Full-stack financial management system automating transactions, budgeting, loans, and goal tracking.
+          </p>
+          <div class="popup-tech">
+            <span class="popup-tag">Python</span>
+            <span class="popup-tag">Flask</span>
+            <span class="popup-tag">MySQL</span>
+            <span class="popup-tag">JS</span>
+            <span class="popup-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="popup-content" data-popup="mlag">
+          <h3>MLAG Config-Sanitizer</h3>
+          <p class="popup-period">Feb - May 2022</p>
+          <p class="popup-description">
+            Tool to autonomously detect and resolve configuration inconsistencies in MLAG devices.
+          </p>
+          <div class="popup-tech">
+            <span class="popup-tag">Python</span>
+            <span class="popup-tag">Pyeapi</span>
+            <span class="popup-tag">Arista EOS</span>
+          </div>
+        </div>
+
+        <div class="popup-content" data-popup="pollution">
+          <h3>Air Pollution Trajectory Prediction</h3>
+          <p class="popup-period">Aug - Nov 2021</p>
+          <p class="popup-description">
+            Built ML models to predict pollutant trajectories using AQI data.
+          </p>
+          <div class="popup-tech">
+            <span class="popup-tag">Python</span>
+            <span class="popup-tag">ML</span>
+          </div>
+        </div>
+
+        <div class="popup-content" data-popup="faculty">
+          <h3>Faculty Dashboard</h3>
+          <p class="popup-period">Feb - May 2021</p>
+          <p class="popup-description">
+            Interactive dashboard for faculty to manage courses, attendance, and assessments.
+          </p>
+          <div class="popup-tech">
+            <span class="popup-tag">NodeJS</span>
+            <span class="popup-tag">Express</span>
+            <span class="popup-tag">MongoDB</span>
+            <span class="popup-tag">Selenium</span>
+          </div>
+        </div>
+
+        <div class="popup-content" data-popup="energy">
+          <h3>Renewable Energy Monitoring System</h3>
+          <p class="popup-period">Aug - Nov 2020</p>
+          <p class="popup-description">
+            Web application to monitor energy systems remotely and visualize performance metrics.
+          </p>
+          <div class="popup-tech">
+            <span class="popup-tag">ReactJS</span>
+            <span class="popup-tag">NodeJS</span>
+            <span class="popup-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <a href="mailto:umasankar.g@northeastern.edu" class="footer-icon" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
           </svg>
         </a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#about" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="journey.html" class="nav-link">Journey</a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link active">Projects</a>
-          </li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation menu">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
+        <span class="footer-name">Ganesh Umasankar</span>
+        <a href="https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+          </svg>
+        </a>
       </div>
-    </nav>
-
-    <section class="projects-section">
-      <div class="floating-bg">
-        <div class="float-emoji float-1">💻</div>
-        <div class="float-emoji float-2">🚀</div>
-        <div class="float-emoji float-3">⚡</div>
-        <div class="float-emoji float-4">🔧</div>
-        <div class="float-emoji float-5">📊</div>
-        <div class="float-emoji float-6">🎯</div>
-        <div class="float-emoji float-7">💡</div>
-        <div class="float-emoji float-8">🔥</div>
-        <div class="float-emoji float-9">⭐</div>
-        <div class="float-emoji float-10">🌟</div>
-        <div class="float-emoji float-11">💎</div>
-        <div class="float-emoji float-12">🎨</div>
-      </div>
-
-      <div class="projects-container">
-        <div class="projects-title">
-          <h1>My Projects</h1>
-          <p>Click on a project to explore</p>
-        </div>
-
-        <div class="circular-menu" id="circularMenu">
-          <div class="menu-center">
-            <span class="center-text">PROJECTS</span>
-          </div>
-          
-          <div class="menu-item" data-project="finance">
-            <div class="item-dot"></div>
-            <div class="item-label">Finance Tracker System</div>
-          </div>
-          
-          <div class="menu-item" data-project="mlag">
-            <div class="item-dot"></div>
-            <div class="item-label">MLAG Config-Sanitizer</div>
-          </div>
-          
-          <div class="menu-item" data-project="pollution">
-            <div class="item-dot"></div>
-            <div class="item-label">Air Pollution Trajectory Prediction</div>
-          </div>
-          
-          <div class="menu-item" data-project="faculty">
-            <div class="item-dot"></div>
-            <div class="item-label">Faculty Dashboard</div>
-          </div>
-          
-          <div class="menu-item" data-project="energy">
-            <div class="item-dot"></div>
-            <div class="item-label">Renewable Energy Monitoring System</div>
-          </div>
-        </div>
-
-        <div class="project-popup" id="projectPopup">
-          <button class="popup-close" id="popupClose">×</button>
-          
-          <div class="popup-content" data-popup="finance">
-            <h3>Finance Tracker System</h3>
-            <p class="popup-period">Feb - Apr 2025</p>
-            <p class="popup-description">
-              Full-stack financial management system automating transactions, budgeting, loans, and goal tracking.
-            </p>
-            <div class="popup-tech">
-              <span class="popup-tag">Python</span>
-              <span class="popup-tag">Flask</span>
-              <span class="popup-tag">MySQL</span>
-              <span class="popup-tag">JS</span>
-              <span class="popup-tag">Bootstrap</span>
-            </div>
-          </div>
-
-          <div class="popup-content" data-popup="mlag">
-            <h3>MLAG Config-Sanitizer</h3>
-            <p class="popup-period">Feb - May 2022</p>
-            <p class="popup-description">
-              Tool to autonomously detect and resolve configuration inconsistencies in MLAG devices.
-            </p>
-            <div class="popup-tech">
-              <span class="popup-tag">Python</span>
-              <span class="popup-tag">Pyeapi</span>
-              <span class="popup-tag">Arista EOS</span>
-            </div>
-          </div>
-
-          <div class="popup-content" data-popup="pollution">
-            <h3>Air Pollution Trajectory Prediction</h3>
-            <p class="popup-period">Aug - Nov 2021</p>
-            <p class="popup-description">
-              Built ML models to predict pollutant trajectories using AQI data.
-            </p>
-            <div class="popup-tech">
-              <span class="popup-tag">Python</span>
-              <span class="popup-tag">ML</span>
-            </div>
-          </div>
-
-          <div class="popup-content" data-popup="faculty">
-            <h3>Faculty Dashboard</h3>
-            <p class="popup-period">Feb - May 2021</p>
-            <p class="popup-description">
-              Interactive dashboard for faculty to manage courses, attendance, and assessments.
-            </p>
-            <div class="popup-tech">
-              <span class="popup-tag">NodeJS</span>
-              <span class="popup-tag">Express</span>
-              <span class="popup-tag">MongoDB</span>
-              <span class="popup-tag">Selenium</span>
-            </div>
-          </div>
-
-          <div class="popup-content" data-popup="energy">
-            <h3>Renewable Energy Monitoring System</h3>
-            <p class="popup-period">Aug - Nov 2020</p>
-            <p class="popup-description">
-              Web application to monitor energy systems remotely and visualize performance metrics.
-            </p>
-            <div class="popup-tech">
-              <span class="popup-tag">ReactJS</span>
-              <span class="popup-tag">NodeJS</span>
-              <span class="popup-tag">MySQL</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <a href="mailto:umasankar.g@northeastern.edu" class="footer-icon" aria-label="Email">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
-            </svg>
-          </a>
-          <span class="footer-name">Ganesh Umasankar</span>
-          <a href="https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>

@@ -1,8 +1,4 @@
 // navigation.js - Shared navigation functionality
-
-/**
- * Initialize navigation for all pages
- */
 export function initNavigation() {
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
@@ -16,14 +12,16 @@ export function initNavigation() {
     navToggle.classList.toggle("active");
     
     // Animate hamburger to X
+    const hamburgers = navToggle.querySelectorAll(".hamburger");
     if (navToggle.classList.contains("active")) {
-      navToggle.children[0].style.transform = "rotate(45deg) translateY(8px)";
-      navToggle.children[1].style.opacity = "0";
-      navToggle.children[2].style.transform = "rotate(-45deg) translateY(-8px)";
+      hamburgers[0].style.transform = "rotate(45deg) translateY(8px)";
+      hamburgers[1].style.opacity = "0";
+      hamburgers[2].style.transform = "rotate(-45deg) translateY(-8px)";
     } else {
-      navToggle.children[0].style.transform = "none";
-      navToggle.children[1].style.opacity = "1";
-      navToggle.children[2].style.transform = "none";
+      hamburgers.forEach(h => {
+        h.style.transform = "none";
+        h.style.opacity = "1";
+      });
     }
   });
   
@@ -32,11 +30,7 @@ export function initNavigation() {
     link.addEventListener("click", () => {
       navMenu.classList.remove("active");
       navToggle.classList.remove("active");
-      
-      // Reset hamburger
-      navToggle.children[0].style.transform = "none";
-      navToggle.children[1].style.opacity = "1";
-      navToggle.children[2].style.transform = "none";
+      resetHamburger(navToggle);
     });
   });
   
@@ -45,13 +39,7 @@ export function initNavigation() {
     if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
       navMenu.classList.remove("active");
       navToggle.classList.remove("active");
-      
-      // Reset hamburger
-      if (navToggle) {
-        navToggle.children[0].style.transform = "none";
-        navToggle.children[1].style.opacity = "1";
-        navToggle.children[2].style.transform = "none";
-      }
+      resetHamburger(navToggle);
     }
   });
   
@@ -84,7 +72,12 @@ export function initNavigation() {
   }
 }
 
-// Export for use in other modules
-export default {
-  initNavigation
-};
+function resetHamburger(navToggle) {
+  const hamburgers = navToggle.querySelectorAll(".hamburger");
+  hamburgers.forEach(h => {
+    h.style.transform = "none";
+    h.style.opacity = "1";
+  });
+}
+
+export default { initNavigation };

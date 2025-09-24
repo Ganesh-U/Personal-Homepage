@@ -1,13 +1,13 @@
 // main.js - Main module for homepage
-import { initConstellation } from "./constellation.js";
+import { initSkills } from "./skills.js";
 import { initNavigation } from "./navigation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   
-  const constellationContainer = document.getElementById("constellationContainer");
-  if (constellationContainer) {
-    initConstellation();
+  const skillsContainer = document.getElementById("skillsContainer");
+  if (skillsContainer) {
+    initSkills();
   }
   
   initSmoothScroll();
@@ -44,5 +44,3 @@ function initSmoothScroll() {
     });
   });
 }
-
-console.log("Homepage initialized successfully");

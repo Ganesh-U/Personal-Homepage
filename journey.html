@@ -1,208 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ganesh Umasankar" />
-    <meta
-      name="description"
-      content="Educational and professional journey of Ganesh Umasankar"
-    />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <title>Journey - Ganesh Umasankar</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="./js/journey.js"></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="nav-brand">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-          </svg>
-        </a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#about" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="journey.html" class="nav-link active">Journey</a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link">Projects</a>
-          </li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation menu">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ganesh Umasankar">
+  <meta name="description" content="Educational and professional journey timeline of Ganesh Umasankar - from B.Tech to MS in Computer Science">
+  <meta name="keywords" content="Ganesh Umasankar, education, experience, Northeastern University, Arista Networks">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <title>Journey - Ganesh Umasankar</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/journey.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Home">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+        </svg>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#about" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="journey.html" class="nav-link active">Journey</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Journey Timeline Section -->
-    <section id="journey" class="journey-expanded">
-      <!-- Floating decorative elements -->
-      <div class="journey-decoration">
-        <div class="float-element float-1">💼</div>
-        <div class="float-element float-2">🎓</div>
-        <div class="float-element float-3">🚀</div>
-        <div class="float-element float-4">💡</div>
-        <div class="float-element float-5">⚡</div>
-        <div class="float-element float-6">🌟</div>
-        <div class="float-element float-7">🔧</div>
-        <div class="float-element float-8">📊</div>
-        <div class="float-element float-9">🎯</div>
-        <div class="float-element float-10">💻</div>
-        <div class="float-element float-11">🏆</div>
-        <div class="float-element float-12">📚</div>
-        <div class="float-element float-13">⭐</div>
-        <div class="float-element float-14">🔥</div>
-        <div class="float-element float-15">🚀</div>
-        <div class="float-element float-16">💎</div>
-        <div class="float-element float-17">🎨</div>
-        <div class="float-element float-18">🔮</div>
-      </div>
-      
-      <div class="journey-header">
-        <h1 class="section-title">My Journey</h1>
-        <p class="journey-subtitle">Click on any milestone to explore details</p>
-      </div>
-      
-      <div class="timeline-container">
-        <div class="timeline-wrapper">
-          <div class="timeline-track">
-            <div class="timeline-line"></div>
-            
-            <!-- 2025 - Current -->
-            <div class="timeline-stop" data-year="2025">
-              <div class="stop-year">2025</div>
-              <div class="stop-point"></div>
-              <div class="stop-card" data-year="2025">
-                <div class="card-icon">🎓</div>
-                <h3>MS Computer Science</h3>
-                <p class="stop-org">Northeastern University</p>
-                <p class="stop-location">Boston, MA</p>
-                <span class="stop-type education">EDUCATION</span>
-              </div>
-              <div class="stop-details" id="details-2025">
-                <div class="details-content">
-                  <p><strong>Duration:</strong> Jan 2025 - Present</p>
-                  <p><strong>Location:</strong> Boston, MA</p>
-                  <p><strong>GPA:</strong> 3.889/4.0</p>
-                  <p><strong>Achievement:</strong> 7% scholarship recipient</p>
-                </div>
+  <section id="journey" class="journey-expanded">
+    <div class="journey-decoration">
+      <div class="float-element float-1">&#128188;</div>
+      <div class="float-element float-2">&#127891;</div>
+      <div class="float-element float-3">&#128640;</div>
+      <div class="float-element float-4">&#128161;</div>
+      <div class="float-element float-5">&#9889;</div>
+      <div class="float-element float-6">&#127775;</div>
+      <div class="float-element float-7">&#128295;</div>
+      <div class="float-element float-8">&#128202;</div>
+      <div class="float-element float-9">&#127919;</div>
+      <div class="float-element float-10">&#128187;</div>
+      <div class="float-element float-11">&#127942;</div>
+      <div class="float-element float-12">&#128218;</div>
+      <div class="float-element float-13">&#11088;</div>
+      <div class="float-element float-14">&#128293;</div>
+      <div class="float-element float-15">&#128640;</div>
+      <div class="float-element float-16">&#128142;</div>
+      <div class="float-element float-17">&#127912;</div>
+      <div class="float-element float-18">&#128302;</div>
+    </div>
+    
+    <div class="journey-header">
+      <h1 class="section-title">My Journey</h1>
+      <p class="journey-subtitle">Click on any milestone to explore details</p>
+    </div>
+    
+    <div class="timeline-container">
+      <div class="timeline-wrapper">
+        <div class="timeline-track">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-stop" data-year="2025">
+            <div class="stop-year">2025</div>
+            <div class="stop-point"></div>
+            <div class="stop-card" data-year="2025">
+              <div class="card-icon">&#127891;</div>
+              <h3>MS Computer Science</h3>
+              <p class="stop-org">Northeastern University</p>
+              <p class="stop-location">Boston, MA</p>
+              <span class="stop-type education">EDUCATION</span>
+            </div>
+            <div class="stop-details" id="details-2025">
+              <div class="details-content">
+                <p><strong>Duration:</strong> Jan 2025 - Present</p>
+                <p><strong>Location:</strong> Boston, MA</p>
+                <p><strong>GPA:</strong> 3.889/4.0</p>
+                <p><strong>Achievement:</strong> 7% scholarship recipient</p>
               </div>
             </div>
+          </div>
 
-            <!-- 2022-2024 - Experience -->
-            <div class="timeline-stop" data-year="2024">
-              <div class="stop-year">2022-24</div>
-              <div class="stop-point"></div>
-              <div class="stop-card" data-year="2024">
-                <div class="card-icon">💼</div>
-                <h3>Technical Solutions Engineer</h3>
-                <p class="stop-org">Arista Networks</p>
-                <p class="stop-location">Bangalore, India</p>
-                <span class="stop-type experience">EXPERIENCE</span>
-              </div>
-              <div class="stop-details" id="details-2024">
-                <div class="details-content">
-                  <p><strong>Duration:</strong> Jul 2022 - Dec 2024</p>
-                  <p><strong>Location:</strong> Bangalore, India</p>
-                  <p><strong>Key Achievements:</strong> Troubleshot and resolved network issues for enterprise clients, specialized in VxLAN-EVPN and advanced networking concepts, automated diagnostic and monitoring tasks using Python, mentored team members on network design, and received 'Best Troubleshooting Approach' award.</p>
-                </div>
+          <div class="timeline-stop" data-year="2024">
+            <div class="stop-year">2022-24</div>
+            <div class="stop-point"></div>
+            <div class="stop-card" data-year="2024">
+              <div class="card-icon">&#128188;</div>
+              <h3>Technical Solutions Engineer</h3>
+              <p class="stop-org">Arista Networks</p>
+              <p class="stop-location">Bangalore, India</p>
+              <span class="stop-type experience">EXPERIENCE</span>
+            </div>
+            <div class="stop-details" id="details-2024">
+              <div class="details-content">
+                <p><strong>Duration:</strong> Jul 2022 - Dec 2024</p>
+                <p><strong>Location:</strong> Bangalore, India</p>
+                <p><strong>Key Achievements:</strong> Troubleshot and resolved network issues for enterprise clients, specialized in VxLAN-EVPN and advanced networking concepts, automated diagnostic and monitoring tasks using Python, mentored team members on network design, and received 'Best Troubleshooting Approach' award.</p>
               </div>
             </div>
+          </div>
 
-
-
-            <!-- 2022 - Internship -->
-            <div class="timeline-stop" data-year="2022-intern">
-              <div class="stop-year">2022</div>
-              <div class="stop-point"></div>
-              <div class="stop-card" data-year="2022-intern">
-                <div class="card-icon">🚀</div>
-                <h3>TSE Intern</h3>
-                <p class="stop-org">Arista Networks</p>
-                <p class="stop-location">Bangalore, India</p>
-                <span class="stop-type experience">EXPERIENCE</span>
-              </div>
-              <div class="stop-details" id="details-2022-intern">
-                <div class="details-content">
-                  <p><strong>Duration:</strong> Jan - Jun 2022</p>
-                  <p><strong>Location:</strong> Bangalore, India</p>
-                  <p><strong>Key Achievements:</strong> Built expertise in networking protocols including Switching, Routing, DHCP, STP, MLAG, OSPF, BGP, and VxLAN. Gained hands-on experience with Python and Arista EOS APIs, and led the MLAG Config-Sanitizer project.</p>
-                </div>
+          <div class="timeline-stop" data-year="2022-intern">
+            <div class="stop-year">2022</div>
+            <div class="stop-point"></div>
+            <div class="stop-card" data-year="2022-intern">
+              <div class="card-icon">&#128640;</div>
+              <h3>TSE Intern</h3>
+              <p class="stop-org">Arista Networks</p>
+              <p class="stop-location">Bangalore, India</p>
+              <span class="stop-type experience">EXPERIENCE</span>
+            </div>
+            <div class="stop-details" id="details-2022-intern">
+              <div class="details-content">
+                <p><strong>Duration:</strong> Jan - Jun 2022</p>
+                <p><strong>Location:</strong> Bangalore, India</p>
+                <p><strong>Key Achievements:</strong> Built expertise in networking protocols including Switching, Routing, DHCP, STP, MLAG, OSPF, BGP, and VxLAN. Gained hands-on experience with Python and Arista EOS APIs, and led the MLAG Config-Sanitizer project.</p>
               </div>
             </div>
+          </div>
 
-            <!-- 2020 - AI Internship -->
-            <div class="timeline-stop" data-year="2020">
-              <div class="stop-year">2020</div>
-              <div class="stop-point"></div>
-              <div class="stop-card" data-year="2020">
-                <div class="card-icon">🤖</div>
-                <h3>AI Intern</h3>
-                <p class="stop-org">Verzeo EduTech</p>
-                <p class="stop-location">Bangalore, India</p>
-                <span class="stop-type experience">EXPERIENCE</span>
-              </div>
-              <div class="stop-details" id="details-2020">
-                <div class="details-content">
-                  <p><strong>Duration:</strong> Apr - Jun 2020</p>
-                  <p><strong>Location:</strong> Bangalore, India</p>
-                  <p><strong>Key Achievements:</strong> Built ANN & CNN models using Keras for image processing and classification, and conducted regression analysis projects.</p>
-                </div>
+          <div class="timeline-stop" data-year="2020">
+            <div class="stop-year">2020</div>
+            <div class="stop-point"></div>
+            <div class="stop-card" data-year="2020">
+              <div class="card-icon">&#129302;</div>
+              <h3>AI Intern</h3>
+              <p class="stop-org">Verzeo EduTech</p>
+              <p class="stop-location">Bangalore, India</p>
+              <span class="stop-type experience">EXPERIENCE</span>
+            </div>
+            <div class="stop-details" id="details-2020">
+              <div class="details-content">
+                <p><strong>Duration:</strong> Apr - Jun 2020</p>
+                <p><strong>Location:</strong> Bangalore, India</p>
+                <p><strong>Key Achievements:</strong> Built ANN &amp; CNN models using Keras for image processing and classification, and conducted regression analysis projects.</p>
               </div>
             </div>
+          </div>
 
-            <!-- 2018-2022 - B.Tech Education -->
-            <div class="timeline-stop" data-year="2018">
-              <div class="stop-year">2018-22</div>
-              <div class="stop-point"></div>
-              <div class="stop-card" data-year="2018">
-                <div class="card-icon">🎓</div>
-                <h3>B.Tech Computer Science</h3>
-                <p class="stop-org">Amrita Vishwa Vidyapeetham</p>
-                <p class="stop-location">Coimbatore, India</p>
-                <span class="stop-type education">EDUCATION</span>
-              </div>
-              <div class="stop-details" id="details-2018">
-                <div class="details-content">
-                  <p><strong>Duration:</strong> Jul 2018 - Jun 2022</p>
-                  <p><strong>CGPA:</strong> 9.19/10 (First Class with Distinction)</p>
-                  <p><strong>Achievement:</strong> 75% scholarship recipient</p>
-                  <p><strong>Location:</strong> Coimbatore, India</p>
-                </div>
+          <div class="timeline-stop" data-year="2018">
+            <div class="stop-year">2018-22</div>
+            <div class="stop-point"></div>
+            <div class="stop-card" data-year="2018">
+              <div class="card-icon">&#127891;</div>
+              <h3>B.Tech Computer Science</h3>
+              <p class="stop-org">Amrita Vishwa Vidyapeetham</p>
+              <p class="stop-location">Coimbatore, India</p>
+              <span class="stop-type education">EDUCATION</span>
+            </div>
+            <div class="stop-details" id="details-2018">
+              <div class="details-content">
+                <p><strong>Duration:</strong> Jul 2018 - Jun 2022</p>
+                <p><strong>CGPA:</strong> 9.19/10 (First Class with Distinction)</p>
+                <p><strong>Achievement:</strong> 75% scholarship recipient</p>
+                <p><strong>Location:</strong> Coimbatore, India</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <a href="mailto:umasankar.g@northeastern.edu" class="footer-icon" aria-label="Email">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-          </a>
-          <span class="footer-name">Ganesh Umasankar</span>
-          <a href="https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-          </a>
-        </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <a href="mailto:umasankar.g@northeastern.edu" class="footer-icon" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+          </svg>
+        </a>
+        <span class="footer-name">Ganesh Umasankar</span>
+        <a href="https://www.linkedin.com/in/ganesh-umasankar-87a3371b4/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+          </svg>
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>
