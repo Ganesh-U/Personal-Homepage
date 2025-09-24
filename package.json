@@ -26,12 +26,12 @@
   "author": "Ganesh Umasankar",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
     "html-validate": "^8.7.4",
     "http-server": "^14.1.1",
-    "prettier": "^3.1.1",
+    "prettier": "^3.6.2",
     "reload": "^3.2.1"
   },
   "repository": {
