@@ -1,4 +1,4 @@
-/* styles.css - Optimized Portfolio Styles */
+/* styles.css - Final Fixes Applied */
 
 /* ========== Base Reset & Variables ========== */
 * {
@@ -177,6 +177,7 @@ h3 { font-size: 2.2rem; }
   align-items: center;
 }
 
+/* FIXED: Profile Image Blur Issue */
 .hero-image-large img {
   width: 100%;
   max-width: 600px;
@@ -190,10 +191,16 @@ h3 { font-size: 2.2rem; }
     0 0 120px rgba(52, 152, 219, 0.3);
   border: 14px solid white;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  /* Image rendering optimizations to fix blur */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .hero-image-large img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) translateZ(0);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.25),
     0 40px 80px rgba(0, 0, 0, 0.2),
@@ -333,9 +340,10 @@ h3 { font-size: 2.2rem; }
   transform: translate(-50%, -50%);
 }
 
+/* FINAL FIX: Much larger nodes and better text handling for skills */
 .main-node {
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,18 +365,28 @@ h3 { font-size: 2.2rem; }
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* FINAL FIX: Completely reworked text handling for skills */
 .node-label {
   color: white;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.5px;
-  padding: 0.5rem;
+  letter-spacing: 0.3px;
+  padding: 0.8rem;
+  white-space: nowrap;
+  max-width: 180px;
+  line-height: 1.3;
+  /* Force single line for shorter phrases, allow wrapping for longer ones */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Special handling for specific skill categories */
+.node-label:contains("Web Development") {
   white-space: normal;
-  word-wrap: break-word;
-  max-width: 150px;
-  line-height: 1.2;
+  word-break: keep-all;
+  hyphens: none;
 }
 
 .node-pulse {
@@ -439,6 +457,7 @@ h3 { font-size: 2.2rem; }
 }
 
 /* ========== Journey Page ========== */
+/* FIXED: Enable full page scrolling for journey */
 .journey-expanded {
   padding-top: 80px;
   background: 
@@ -446,11 +465,14 @@ h3 { font-size: 2.2rem; }
     radial-gradient(circle at 80% 80%, rgba(231, 76, 60, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 40% 70%, rgba(155, 89, 182, 0.06) 0%, transparent 50%),
     linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
-  height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
+  /* CHANGED: Remove height constraint, allow natural flow */
+  min-height: 100vh;
+  display: block;
   position: relative;
-  overflow: hidden;
+  /* ADDED: Enable vertical scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 120px;
 }
 
 .journey-decoration {
@@ -504,8 +526,9 @@ h3 { font-size: 2.2rem; }
 
 .journey-header {
   text-align: center;
-  padding: 1.5rem 0 1rem;
+  padding: 2rem 0 2rem;
   position: relative;
+  z-index: 10;
 }
 
 .journey-header::before {
@@ -533,22 +556,18 @@ h3 { font-size: 2.2rem; }
   margin-bottom: 0;
 }
 
+/* FIXED: Remove flex constraints, use regular block layout */
 .timeline-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding: 0 0 80px;
+  padding: 2rem 0;
+  width: 100%;
 }
 
+/* FIXED: Make timeline wrapper scrollable horizontally but allow page scrolling */
 .journey-expanded .timeline-wrapper {
   overflow-x: auto;
   overflow-y: visible;
-  padding: 1.5rem 1rem 2rem;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2rem;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   margin: 0 2rem;
@@ -560,10 +579,10 @@ h3 { font-size: 2.2rem; }
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0;
-  width: 100%;
+  padding: 2rem 0;
+  width: max-content;
+  min-width: 100%;
   height: auto;
-  min-height: 500px;
 }
 
 .journey-expanded .timeline-line {
@@ -591,9 +610,11 @@ h3 { font-size: 2.2rem; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   transition: all 0.3s ease;
-  flex: 1;
+  flex: 0 0 360px;
+  margin: 0 1rem;
+  min-height: 600px;
 }
 
 .journey-expanded .stop-year {
@@ -648,7 +669,7 @@ h3 { font-size: 2.2rem; }
   padding: 2rem 1.8rem;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  width: 260px;
+  width: 320px;
   transition: all 0.4s ease;
   cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -748,10 +769,12 @@ h3 { font-size: 2.2rem; }
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-top: none;
   backdrop-filter: blur(15px);
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .journey-expanded .stop-details.expanded {
-  max-height: 400px;
+  max-height: 500px;
   opacity: 1;
   padding: 2rem;
   border-color: var(--secondary-color);
@@ -760,8 +783,11 @@ h3 { font-size: 2.2rem; }
 
 .journey-expanded .details-content {
   color: var(--text-primary);
-  line-height: 1.8;
-  font-size: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .journey-expanded .details-content p {
@@ -793,23 +819,24 @@ h3 { font-size: 2.2rem; }
 }
 
 /* ========== Projects Page ========== */
+/* FIXED: Projects Page Layout and Popup Positioning */
 .projects-section {
   padding-top: 80px;
-  height: calc(100vh - 60px);
+  min-height: 100vh;
   background: 
     radial-gradient(circle at 25% 25%, rgba(52, 152, 219, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(231, 76, 60, 0.06) 0%, transparent 50%),
     radial-gradient(circle at 50% 30%, rgba(155, 89, 182, 0.05) 0%, transparent 50%),
     linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding-bottom: 100px;
 }
 
 .floating-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -835,15 +862,20 @@ h3 { font-size: 2.2rem; }
   position: relative;
   width: 100%;
   max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  padding: 0 20px;
 }
 
 .projects-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .projects-title h1 {
@@ -859,9 +891,10 @@ h3 { font-size: 2.2rem; }
 
 .circular-menu {
   position: relative;
-  width: 850px;
-  height: 850px;
+  width: min(700px, 60vw);
+  height: min(700px, 60vw);
   animation: rotateMenu 50s linear infinite;
+  margin: 2rem 0;
 }
 
 @keyframes rotateMenu {
@@ -879,8 +912,8 @@ h3 { font-size: 2.2rem; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   background: linear-gradient(135deg, var(--secondary-color), #2980b9);
   border-radius: 50%;
   display: flex;
@@ -892,7 +925,7 @@ h3 { font-size: 2.2rem; }
 
 .center-text {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   animation: counterRotate 50s linear infinite;
   text-align: center;
@@ -900,8 +933,8 @@ h3 { font-size: 2.2rem; }
 
 .menu-item {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -952,7 +985,7 @@ h3 { font-size: 2.2rem; }
   right: 0;
   bottom: 0;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   animation: counterRotate 50s linear infinite;
   color: rgb(255, 255, 255);
@@ -967,17 +1000,18 @@ h3 { font-size: 2.2rem; }
   border-radius: 50%;
 }
 
+/* FIXED: Better popup positioning to prevent going off-screen */
 .project-popup {
-  position: absolute;
+  position: fixed;
   top: 50%;
-  right: -450px;
-  transform: translateY(-50%) scale(0);
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 20px;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
   padding: 2.5rem;
-  width: 420px;
-  max-height: 75vh;
+  width: min(450px, 90vw);
+  max-height: 80vh;
   overflow-y: auto;
   z-index: 2000;
   opacity: 0;
@@ -986,7 +1020,7 @@ h3 { font-size: 2.2rem; }
 }
 
 .project-popup.active {
-  transform: translateY(-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
 
@@ -1078,17 +1112,17 @@ h3 { font-size: 2.2rem; }
 
 /* Popup Scrollbar */
 .project-popup::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 .project-popup::-webkit-scrollbar-track {
   background: var(--bg-tertiary);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .project-popup::-webkit-scrollbar-thumb {
   background: var(--secondary-color);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .project-popup::-webkit-scrollbar-thumb:hover {
@@ -1156,8 +1190,8 @@ section {
   .hero-subtitle-large { font-size: 2.4rem; }
   .section-title { font-size: 4.2rem; }
   .about-text { font-size: 1.65rem; }
-  .main-node { width: 140px; height: 140px; }
-  .node-label { font-size: 1.1rem; max-width: 120px; }
+  .main-node { width: 160px; height: 160px; }
+  .node-label { font-size: 1.1rem; max-width: 140px; }
   .sub-node { width: 80px; height: 80px; }
   .sub-node-label { font-size: 0.75rem; max-width: 70px; }
 }
@@ -1175,8 +1209,8 @@ section {
   .section-title { font-size: 4.5rem; }
   .about-skills-wrapper { max-width: 1700px; }
   .skills-visualization { height: 650px; }
-  .main-node { width: 150px; height: 150px; }
-  .node-label { font-size: 1.2rem; max-width: 130px; }
+  .main-node { width: 220px; height: 220px; }
+  .node-label { font-size: 1.2rem; max-width: 200px; }
   .sub-node { width: 90px; height: 90px; }
   .sub-node-label { font-size: 0.8rem; max-width: 80px; }
 }
@@ -1194,8 +1228,8 @@ section {
   .section-title { font-size: 5rem; }
   .about-skills-wrapper { max-width: 1900px; }
   .skills-visualization { height: 700px; }
-  .main-node { width: 170px; height: 170px; }
-  .node-label { font-size: 1.2rem; max-width: 150px; }
+  .main-node { width: 240px; height: 240px; }
+  .node-label { font-size: 1.3rem; max-width: 220px; }
   .sub-node { width: 100px; height: 100px; }
   .sub-node-label { font-size: 0.9rem; max-width: 90px; }
 }
@@ -1215,35 +1249,30 @@ section {
   .about-content { padding-right: 0; }
   .skills-panel { padding-left: 0; }
   .skills-visualization { height: 400px; }
-  .main-node { width: 100px; height: 100px; }
-  .node-label { font-size: 0.85rem; max-width: 85px; }
+  .main-node { width: 140px; height: 140px; }
+  .node-label { font-size: 0.9rem; max-width: 120px; }
   .sub-node { width: 65px; height: 65px; }
   .sub-node-label { font-size: 0.65rem; max-width: 55px; }
   
   .circular-menu {
-    width: 600px;
-    height: 600px;
+    width: min(500px, 70vw);
+    height: min(500px, 70vw);
   }
   
   .menu-center {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .center-text { font-size: 1.6rem; }
-  
-  .menu-item {
     width: 150px;
     height: 150px;
   }
   
-  .item-label { font-size: 0.8rem; }
-  .projects-title h1 { font-size: 3.5rem; }
+  .center-text { font-size: 1.3rem; }
   
-  .project-popup {
-    width: 380px;
-    right: -400px;
+  .menu-item {
+    width: 120px;
+    height: 120px;
   }
+  
+  .item-label { font-size: 0.9rem; }
+  .projects-title h1 { font-size: 3.5rem; }
 }
 
 @media (max-width: 992px) {
@@ -1260,37 +1289,6 @@ section {
   .nav-link { font-size: 1.1rem; }
   .about-subtitle, .skills-subtitle { font-size: 1.8rem; }
   .about-text { font-size: 1.3rem; }
-}
-
-@media (max-width: 968px) {
-  .circular-menu {
-    width: 450px;
-    height: 450px;
-  }
-  
-  .menu-center {
-    width: 120px;
-    height: 120px;
-  }
-  
-  .center-text { font-size: 1.2rem; }
-  
-  .menu-item {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .item-label { font-size: 0.75rem; }
-  .projects-title h1 { font-size: 3rem; }
-  
-  .project-popup {
-    width: 350px;
-    right: 40px;
-    padding: 2rem;
-  }
-  
-  .popup-content h3 { font-size: 1.4rem; }
-  .float-emoji { font-size: 1.5rem; }
 }
 
 @media (max-width: 768px) {
@@ -1322,14 +1320,14 @@ section {
   .nav-toggle { display: flex; }
   .hero-image-large img { max-width: 280px; border: 8px solid white; }
   
-  .journey-expanded .timeline-wrapper { padding: 2rem 1.5rem 3rem; margin: 0 1rem; }
+  .journey-expanded .timeline-wrapper { padding: 1.5rem; margin: 0 1rem; }
   .journey-expanded .section-title { font-size: 2.5rem; }
   .journey-expanded .journey-subtitle { font-size: 1rem; }
   .journey-expanded .stop-year { font-size: 1.2rem; }
   
   .skills-visualization { height: 350px; }
-  .main-node { width: 90px; height: 90px; }
-  .node-label { font-size: 0.8rem; max-width: 75px; }
+  .main-node { width: 120px; height: 120px; }
+  .node-label { font-size: 0.8rem; max-width: 100px; }
   .sub-node { width: 60px; height: 60px; }
   .sub-node-label { font-size: 0.6rem; max-width: 50px; }
   .about-subtitle, .skills-subtitle { font-size: 1.6rem; }
@@ -1337,8 +1335,8 @@ section {
   .float-element { font-size: 1.3rem; }
   
   .circular-menu {
-    width: 350px;
-    height: 350px;
+    width: min(350px, 85vw);
+    height: min(350px, 85vw);
   }
   
   .menu-center {
@@ -1356,36 +1354,25 @@ section {
   .item-label { font-size: 0.7rem; }
   .projects-title h1 { font-size: 2.5rem; }
   .projects-title { margin-bottom: 3rem; }
-  
-  .project-popup {
-    width: calc(100vw - 40px);
-    right: 20px;
-    left: 20px;
-    transform: translateY(-50%) scale(0);
-  }
-  
-  .project-popup.active {
-    transform: translateY(-50%) scale(1);
-  }
 }
 
 @media (max-width: 480px) {
   .hero-image-large img { max-width: 220px; border: 6px solid white; }
   .hero-container { padding: 1rem 20px; }
   
-  .journey-expanded .timeline-wrapper { padding: 1.5rem; margin: 0 0.5rem; }
+  .journey-expanded .timeline-wrapper { padding: 1rem; margin: 0 0.5rem; }
   
   .skills-visualization { height: 320px; }
-  .main-node { width: 80px; height: 80px; }
-  .node-label { font-size: 0.7rem; max-width: 70px; }
+  .main-node { width: 100px; height: 100px; }
+  .node-label { font-size: 0.7rem; max-width: 85px; }
   .sub-node { width: 55px; height: 55px; }
   .sub-node-label { font-size: 0.55rem; max-width: 45px; }
   .about-text { font-size: 1.1rem; }
   .float-element { font-size: 1.1rem; }
   
   .circular-menu {
-    width: 300px;
-    height: 300px;
+    width: min(280px, 90vw);
+    height: min(280px, 90vw);
   }
   
   .menu-center {
@@ -1393,16 +1380,13 @@ section {
     height: 80px;
   }
   
-  .center-text { font-size: 0.9rem; }
+  .center-text { font-size: 0.8rem; }
   
   .menu-item {
     width: 70px;
     height: 70px;
   }
   
-  .item-label { font-size: 0.65rem; }
+  .item-label { font-size: 0.6rem; }
   .projects-title h1 { font-size: 2rem; }
-  
-  .project-popup { padding: 1.2rem; }
-  .popup-content h3 { font-size: 1.1rem; }
 }
