@@ -155,7 +155,7 @@ Northeastern University, Boston, MA
 ## Documentation & Resources
 
 ### Project Documentation
-- **Design Document:** [Design Documentation](docs/design-document.pdf)
+- **Design Document:** [Design Documentation](design-document.pdf)
 - **Presentation:** [Slides](https://docs.google.com/presentation/d/1yIyCJ-IcHAYClWeDO4o5jYCC0doyQlSiq8o7bzsD2QM/edit?usp=sharing)
 - **Video Demo:** [Homepage Walkthrough](https://drive.google.com/file/d/15YcNMW-W8f7LugiJCLtD-vPwWwQoJEZY/view?usp=sharing)
 - **Live Website:** [Portfolio URL](https://ganesh-u.github.io/Personal-Homepage/)
