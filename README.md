@@ -149,8 +149,8 @@ Northeastern University, Boston, MA
 
 **Course:** CS5610 - Web Development  
 **Institution:** Northeastern University  
-**Semester:** Spring 2025  
-**Course Website:** [https://johnguerra.co/classes/webDevelopment_spring_2025/](https://johnguerra.co/classes/webDevelopment_spring_2025/)
+**Semester:** Fall 2025  
+**Course Website:** [[https://johnguerra.co/classes/webDevelopment_spring_2025/](https://johnguerra.co/classes/webDevelopment_spring_2025/)]
 
 ## Documentation & Resources
 
